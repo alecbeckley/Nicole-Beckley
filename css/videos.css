@@ -1,0 +1,60 @@
+/*===== Variables ======*/
+/*===== Mixins ======*/
+/*====== Main CSS ======*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  border-radius: 0;
+  font-family: "Ubuntu", sans-serif; }
+
+.navbar {
+  background-color: white; }
+  .navbar .navbar-brand {
+    color: black;
+    font-size: 30px; }
+  .navbar .navbar-collapse > .navbar-nav > .nav-item > .nav-link {
+    color: black;
+    font-size: 18px; }
+  .navbar .navbar-toggler > .navbar-toggler-icon {
+    background-image: url("../img/hamburger.png"); }
+
+.videos {
+  height: 45em; }
+
+.contact {
+  background-color: black;
+  height: 8em; }
+  .contact p {
+    font-size: 18px; }
+
+/*================= Media Queries ================*/
+@media (max-width: 1199px) {
+  .videos {
+    height: 50em; }
+
+  iframe {
+    height: 80%; } }
+@media (max-width: 991px) {
+  .videos {
+    height: 50em; }
+
+  iframe {
+    height: 80%; } }
+@media (max-width: 770px) {
+  .videos {
+    height: 30em; }
+
+  iframe {
+    height: 80%; } }
+@media (max-width: 575px) {
+  .videos {
+    height: 15em; }
+
+  iframe {
+    height: auto; } }
+
+/*# sourceMappingURL=videos.css.map */

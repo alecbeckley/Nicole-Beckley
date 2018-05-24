@@ -1,0 +1,117 @@
+/*===== Variables ======*/
+
+//fonts
+$font-header: 'Lobster', sans-serif;
+$font-secondary: 'Ubuntu', sans-serif;
+
+/*===== Mixins ======*/
+@mixin background-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*====== Main CSS ======*/
+
+//White space removal
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  border-radius: 0;
+  font-family: $font-secondary;
+}
+
+//Navbar
+.navbar {
+  background-color: white;
+
+  .navbar-brand {
+    color: black;
+    font-size: 30px;
+  }
+
+  .navbar-collapse > .navbar-nav > .nav-item > .nav-link {
+    color: black;
+    font-size: 18px;
+  }
+
+  .navbar-toggler > .navbar-toggler-icon {
+    background-image: url("../img/hamburger.png");
+  }
+}
+
+//Videos
+.videos {
+  height: 45em;
+}
+
+//Contact
+.contact {
+  background-color: black;
+  height: 8em;
+
+  p {
+    font-size: 18px
+  }
+}
+
+/*================= Media Queries ================*/
+
+@media (max-width: 1199px) {
+
+  //Videos
+  .videos {
+    height: 50em;
+  }
+
+  iframe {
+    height: 80%;
+  }
+
+}
+
+
+@media (max-width: 991px) {
+
+  //Videos
+  .videos {
+    height: 50em;
+  }
+
+  iframe {
+    height: 80%;
+  }
+
+}
+
+
+@media (max-width: 770px) {
+
+  //Videos
+  .videos {
+    height: 30em;
+  }
+
+  iframe {
+    height: 80%;
+  }
+
+}
+
+
+@media (max-width: 575px) {
+
+  //Videos
+  .videos {
+    height: 15em;
+  }
+
+  iframe {
+    height: auto;
+  }
+
+}

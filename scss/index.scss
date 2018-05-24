@@ -1,0 +1,138 @@
+/*===== Variables ======*/
+
+//fonts
+$font-header: 'Lobster', sans-serif;
+$font-secondary: 'Ubuntu', sans-serif;
+
+/*===== Mixins ======*/
+@mixin background-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*====== Main CSS ======*/
+
+//White space removal
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  border-radius: 0;
+  font-family: $font-secondary;
+}
+
+//Navbar
+.navbar {
+  background-color: white;
+
+  .navbar-brand {
+    color: black;
+    font-size: 30px;
+  }
+
+  .navbar-collapse > .navbar-nav > .nav-item > .nav-link {
+    color: black;
+    font-size: 18px;
+  }
+
+  .navbar-toggler > .navbar-toggler-icon {
+    background-image: url("../img/hamburger.png");
+  }
+}
+
+//Main Photo
+.main-photo {
+  height: 46em;
+  margin-bottom: 15em;
+
+  img {
+    @include background-img;
+    border-style: solid;
+    border-radius: 10px;
+  }
+}
+
+//About Me
+.about-me {
+  margin-bottom: 5em;
+}
+
+.about-me > .row {
+  .text {
+    h1 {
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+  }
+
+  .picture{
+    img{
+      border-style: solid;
+      border-radius: 10px;
+    }
+  }
+}
+
+//Contact
+.contact {
+  background-color: black;
+  height: 8em;
+
+  p {
+    font-size: 18px
+  }
+}
+
+/*================= Media Queries ================*/
+
+@media (max-width: 1199px) {
+
+  //Main Photo
+  .main-photo {
+    margin-bottom: 0;
+    height: 40em;;
+  }
+
+}
+
+
+@media (max-width: 991px) {
+
+  //Main photo
+  .main-photo {
+    margin-bottom: 0;
+    height: auto;
+  }
+
+}
+
+
+@media (max-width: 770px) {
+
+  //Main Photo
+  .main-photo {
+    height: 34em;
+    margin-bottom: 0;
+  }
+
+}
+
+
+@media (max-width: 575px) {
+
+  //Main Photo
+  .main-photo {
+    height: 17em;
+    margin-bottom: 0;
+  }
+
+}

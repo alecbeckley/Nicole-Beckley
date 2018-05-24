@@ -1,0 +1,110 @@
+/*===== Variables ======*/
+
+//fonts
+$font-header: 'Lobster', sans-serif;
+$font-secondary: 'Ubuntu', sans-serif;
+
+/*===== Mixins ======*/
+@mixin background-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/*====== Main CSS ======*/
+
+//White space removal
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  border-radius: 0;
+  font-family: $font-secondary;
+}
+
+//Navbar
+.navbar {
+  background-color: white;
+
+  .navbar-brand {
+    color: black;
+    font-size: 30px;
+  }
+
+  .navbar-collapse > .navbar-nav > .nav-item > .nav-link {
+    color: black;
+    font-size: 18px;
+  }
+
+  .navbar-toggler > .navbar-toggler-icon {
+    background-image: url("../img/hamburger.png");
+  }
+}
+
+//Portfolio
+.cover-container {
+    height: 40em;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.cover-item {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+    @include background-img;
+}
+
+//Contact
+.contact {
+  background-color: black;
+  height: 8em;
+  margin-top: 5em;
+
+  p {
+    font-size: 18px
+  }
+}
+
+/*================= Media Queries ================*/
+
+@media (max-width: 1199px) {
+
+  //Portfolio
+  .portfolio {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+}
+
+
+@media (max-width: 991px) {
+
+}
+
+
+@media (max-width: 770px) {
+
+}
+
+
+@media (max-width: 575px) {
+
+  //Portfolio
+  .portfolio {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  //Contact
+  .contact {
+    margin-top: 0;
+  }
+
+}
